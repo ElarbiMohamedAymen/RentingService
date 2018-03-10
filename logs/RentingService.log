@@ -1,0 +1,904 @@
+[10-03-2018 18:03:43.609]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:03:43.609]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:03:44.006]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 13052 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:03:44.006]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 13052 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:03:44.014]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:03:44.014]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:03:44.071]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f568ab5: startup date [Sat Mar 10 18:03:44 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:03:44.071]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f568ab5: startup date [Sat Mar 10 18:03:44 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:03:44.229]
+				[DEBUG][org.jboss.logging.logProvider(160)] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[10-03-2018 18:03:44.232]
+				[INFO ][o.h.validator.internal.util.Version.<clinit>(30)] - HV000001: Hibernate Validator 5.3.6.Final 
+[10-03-2018 18:03:44.293]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:03:45.175]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:03:45.188]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:03:45.194]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:03:45.195]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:03:45.196]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:03:45.198]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:03:45.199]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:03:45.200]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:03:45.201]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:03:45.202]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:03:45.529]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:03:45.529]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:03:45.550]
+				[INFO ][o.a.catalina.core.StandardService.log(179)] - Starting service [Tomcat] 
+[10-03-2018 18:03:45.552]
+				[INFO ][o.a.catalina.core.StandardEngine.log(179)] - Starting Servlet Engine: Apache Tomcat/8.5.23 
+[10-03-2018 18:03:45.670]
+				[INFO ][o.a.c.c.C.[Tomcat].[localhost].[/].log(179)] - Initializing Spring embedded WebApplicationContext 
+[10-03-2018 18:03:45.670]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1599 ms 
+[10-03-2018 18:03:45.670]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1599 ms 
+[10-03-2018 18:03:45.880]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:03:45.880]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:03:45.885]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:03:45.885]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:03:45.886]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:03:45.886]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:03:45.887]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:03:45.887]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:03:45.887]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:03:45.887]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:03:46.088]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:03:46.096]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:03:46.097]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:03:46.097]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:03:46.097]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:03:46.097]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:03:46.098]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:03:46.098]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:03:46.099]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:03:46.099]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:03:46.347]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f568ab5: startup date [Sat Mar 10 18:03:44 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:03:46.347]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f568ab5: startup date [Sat Mar 10 18:03:44 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:03:46.427]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:03:46.427]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:03:46.429]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:03:46.429]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:03:46.477]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:03:46.477]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:03:46.478]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:03:46.478]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:03:46.536]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:03:46.536]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:03:46.727]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:03:46.727]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:03:46.747]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Initializing ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:03:46.760]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Starting ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:03:46.774]
+				[INFO ][o.a.tomcat.util.net.NioSelectorPool.log(179)] - Using a shared selector for servlet write/read 
+[10-03-2018 18:03:46.792]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:03:46.792]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:03:46.797]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 3.054 seconds (JVM running for 4.196) 
+[10-03-2018 18:03:46.797]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 3.054 seconds (JVM running for 4.196) 
+[10-03-2018 18:04:03.976]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:04:03.976]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:04:03.977]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f568ab5: startup date [Sat Mar 10 18:03:44 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:04:03.977]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f568ab5: startup date [Sat Mar 10 18:03:44 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:04:03.980]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:04:03.980]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:38:19.277]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:38:19.277]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:38:19.644]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 14324 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:38:19.644]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 14324 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:38:19.645]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:38:19.645]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:38:19.691]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:38:19 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:19.691]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:38:19 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:19.814]
+				[DEBUG][org.jboss.logging.logProvider(160)] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[10-03-2018 18:38:19.816]
+				[INFO ][o.h.validator.internal.util.Version.<clinit>(30)] - HV000001: Hibernate Validator 5.3.6.Final 
+[10-03-2018 18:38:19.846]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:20.470]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:20.477]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:20.480]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:38:20.481]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:38:20.482]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:38:20.484]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:38:20.485]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:38:20.486]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:38:20.486]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:38:20.487]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:38:20.722]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:38:20.722]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:38:20.734]
+				[INFO ][o.a.catalina.core.StandardService.log(179)] - Starting service [Tomcat] 
+[10-03-2018 18:38:20.735]
+				[INFO ][o.a.catalina.core.StandardEngine.log(179)] - Starting Servlet Engine: Apache Tomcat/8.5.23 
+[10-03-2018 18:38:20.829]
+				[INFO ][o.a.c.c.C.[Tomcat].[localhost].[/].log(179)] - Initializing Spring embedded WebApplicationContext 
+[10-03-2018 18:38:20.829]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1138 ms 
+[10-03-2018 18:38:20.829]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1138 ms 
+[10-03-2018 18:38:20.961]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:38:20.961]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:38:20.965]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:38:20.965]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:38:20.965]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:38:20.965]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:38:20.966]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:38:20.966]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:38:20.966]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:38:20.966]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:38:21.097]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:21.104]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:21.104]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:38:21.104]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:38:21.105]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:38:21.105]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:38:21.105]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:38:21.105]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:38:21.106]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:38:21.106]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:38:21.251]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:38:19 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:21.251]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:38:19 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:21.302]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:38:21.302]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:38:21.304]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:38:21.304]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:38:21.335]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:21.335]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:21.335]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:21.335]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:21.369]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:21.369]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:21.522]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:38:21.522]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:38:21.538]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Initializing ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:38:21.548]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Starting ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:38:21.559]
+				[INFO ][o.a.tomcat.util.net.NioSelectorPool.log(179)] - Using a shared selector for servlet write/read 
+[10-03-2018 18:38:21.574]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:38:21.574]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:38:21.579]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.17 seconds (JVM running for 3.413) 
+[10-03-2018 18:38:21.579]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.17 seconds (JVM running for 3.413) 
+[10-03-2018 18:38:31.703]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:38:31.703]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:38:31.704]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:38:19 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:31.704]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:38:19 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:31.746]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:38:31.746]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:38:48.156]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:38:48.156]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:38:48.482]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 300 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:38:48.482]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 300 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:38:48.483]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:38:48.483]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:38:48.531]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72eff0ae: startup date [Sat Mar 10 18:38:48 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:48.531]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72eff0ae: startup date [Sat Mar 10 18:38:48 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:48.672]
+				[DEBUG][org.jboss.logging.logProvider(160)] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[10-03-2018 18:38:48.673]
+				[INFO ][o.h.validator.internal.util.Version.<clinit>(30)] - HV000001: Hibernate Validator 5.3.6.Final 
+[10-03-2018 18:38:48.699]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:49.327]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:49.334]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:49.337]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:38:49.338]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:38:49.339]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:38:49.341]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:38:49.343]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:38:49.344]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:38:49.345]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:38:49.346]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:38:49.672]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:38:49.672]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:38:49.686]
+				[INFO ][o.a.catalina.core.StandardService.log(179)] - Starting service [Tomcat] 
+[10-03-2018 18:38:49.687]
+				[INFO ][o.a.catalina.core.StandardEngine.log(179)] - Starting Servlet Engine: Apache Tomcat/8.5.23 
+[10-03-2018 18:38:49.768]
+				[INFO ][o.a.c.c.C.[Tomcat].[localhost].[/].log(179)] - Initializing Spring embedded WebApplicationContext 
+[10-03-2018 18:38:49.768]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1237 ms 
+[10-03-2018 18:38:49.768]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1237 ms 
+[10-03-2018 18:38:49.898]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:38:49.898]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:38:49.901]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:38:49.901]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:38:49.902]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:38:49.902]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:38:49.902]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:38:49.902]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:38:49.903]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:38:49.903]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:38:50.029]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:50.037]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:38:50.038]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:38:50.038]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:38:50.038]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:38:50.039]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:38:50.039]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:38:50.039]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:38:50.039]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:38:50.040]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:38:50.177]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72eff0ae: startup date [Sat Mar 10 18:38:48 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:50.177]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72eff0ae: startup date [Sat Mar 10 18:38:48 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:38:50.230]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:38:50.230]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:38:50.231]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:38:50.231]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:38:50.260]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:50.260]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:50.260]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:50.260]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:50.293]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:50.293]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:38:50.433]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:38:50.433]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:38:50.448]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Initializing ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:38:50.459]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Starting ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:38:50.471]
+				[INFO ][o.a.tomcat.util.net.NioSelectorPool.log(179)] - Using a shared selector for servlet write/read 
+[10-03-2018 18:38:50.486]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:38:50.486]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:38:50.490]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.226 seconds (JVM running for 3.22) 
+[10-03-2018 18:38:50.490]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.226 seconds (JVM running for 3.22) 
+[10-03-2018 18:39:00.782]
+				[INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(125)] - Application shutdown requested. 
+[10-03-2018 18:39:00.782]
+				[INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(125)] - Application shutdown requested. 
+[10-03-2018 18:39:00.782]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72eff0ae: startup date [Sat Mar 10 18:38:48 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:00.782]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72eff0ae: startup date [Sat Mar 10 18:38:48 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:00.785]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:39:00.785]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:39:02.166]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:39:02.166]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:39:04.650]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:39:04.650]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:39:05.017]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 8356 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:39:05.017]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 8356 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:39:05.018]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:39:05.018]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:39:05.082]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:39:05 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:05.082]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:39:05 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:05.238]
+				[DEBUG][org.jboss.logging.logProvider(160)] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[10-03-2018 18:39:05.240]
+				[INFO ][o.h.validator.internal.util.Version.<clinit>(30)] - HV000001: Hibernate Validator 5.3.6.Final 
+[10-03-2018 18:39:05.271]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:39:06.005]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:39:06.015]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:39:06.020]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:39:06.021]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:39:06.022]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:39:06.024]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:39:06.025]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:39:06.026]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:39:06.027]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:39:06.028]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:39:06.318]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:39:06.318]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:39:06.334]
+				[INFO ][o.a.catalina.core.StandardService.log(179)] - Starting service [Tomcat] 
+[10-03-2018 18:39:06.335]
+				[INFO ][o.a.catalina.core.StandardEngine.log(179)] - Starting Servlet Engine: Apache Tomcat/8.5.23 
+[10-03-2018 18:39:06.425]
+				[INFO ][o.a.c.c.C.[Tomcat].[localhost].[/].log(179)] - Initializing Spring embedded WebApplicationContext 
+[10-03-2018 18:39:06.425]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1343 ms 
+[10-03-2018 18:39:06.425]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1343 ms 
+[10-03-2018 18:39:06.578]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:39:06.578]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:39:06.581]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:39:06.581]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:39:06.582]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:39:06.582]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:39:06.583]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:39:06.583]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:39:06.583]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:39:06.583]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:39:06.736]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:39:06.744]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:39:06.745]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:39:06.745]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:39:06.746]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:39:06.746]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:39:06.746]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:39:06.747]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:39:06.747]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:39:06.748]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:39:06.918]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:39:05 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:06.918]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:39:05 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:06.980]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:39:06.980]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:39:06.982]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:39:06.982]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:39:07.019]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:39:07.019]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:39:07.019]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:39:07.019]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:39:07.060]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:39:07.060]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:39:07.229]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:39:07.229]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:39:07.249]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Initializing ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:39:07.263]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Starting ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:39:07.274]
+				[INFO ][o.a.tomcat.util.net.NioSelectorPool.log(179)] - Using a shared selector for servlet write/read 
+[10-03-2018 18:39:07.293]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:39:07.293]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:39:07.299]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.526 seconds (JVM running for 3.637) 
+[10-03-2018 18:39:07.299]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.526 seconds (JVM running for 3.637) 
+[10-03-2018 18:39:15.714]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:39:15.714]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:39:15.715]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:39:05 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:15.715]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14dd2d4a: startup date [Sat Mar 10 18:39:05 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:39:15.717]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:39:15.717]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:42:09.125]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:42:09.125]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:42:09.448]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 9024 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:42:09.448]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 9024 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:42:09.449]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:42:09.449]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:42:09.507]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:42:09 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:42:09.507]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:42:09 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:42:09.651]
+				[DEBUG][org.jboss.logging.logProvider(160)] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[10-03-2018 18:42:09.652]
+				[INFO ][o.h.validator.internal.util.Version.<clinit>(30)] - HV000001: Hibernate Validator 5.3.6.Final 
+[10-03-2018 18:42:09.687]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:42:10.346]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:42:10.354]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:42:10.359]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:42:10.362]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:42:10.365]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:42:10.366]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:42:10.368]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:42:10.369]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:42:10.369]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:42:10.369]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:42:10.656]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:42:10.656]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:42:10.668]
+				[INFO ][o.a.catalina.core.StandardService.log(179)] - Starting service [Tomcat] 
+[10-03-2018 18:42:10.669]
+				[INFO ][o.a.catalina.core.StandardEngine.log(179)] - Starting Servlet Engine: Apache Tomcat/8.5.23 
+[10-03-2018 18:42:10.770]
+				[INFO ][o.a.c.c.C.[Tomcat].[localhost].[/].log(179)] - Initializing Spring embedded WebApplicationContext 
+[10-03-2018 18:42:10.770]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1263 ms 
+[10-03-2018 18:42:10.770]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1263 ms 
+[10-03-2018 18:42:10.907]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:42:10.907]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:42:10.911]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:42:10.911]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:42:10.912]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:42:10.912]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:42:10.912]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:42:10.912]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:42:10.913]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:42:10.913]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:42:11.047]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:42:11.056]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:42:11.057]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:42:11.057]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:42:11.057]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:42:11.057]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:42:11.057]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:42:11.058]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:42:11.058]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:42:11.058]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:42:11.200]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:42:09 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:42:11.200]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:42:09 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:42:11.253]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:42:11.253]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:42:11.254]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:42:11.254]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:42:11.283]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:42:11.283]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:42:11.284]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:42:11.284]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:42:11.318]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:42:11.318]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:42:11.474]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:42:11.474]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:42:11.497]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Initializing ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:42:11.508]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Starting ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:42:11.520]
+				[INFO ][o.a.tomcat.util.net.NioSelectorPool.log(179)] - Using a shared selector for servlet write/read 
+[10-03-2018 18:42:11.535]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:42:11.535]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:42:11.539]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.311 seconds (JVM running for 3.253) 
+[10-03-2018 18:42:11.539]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.311 seconds (JVM running for 3.253) 
+[10-03-2018 18:45:22.560]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:45:22.560]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:45:22.561]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:42:09 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:22.561]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:42:09 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:22.563]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:45:22.563]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:45:24.687]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:45:24.687]
+				[INFO ][c.geenie.renting.LauncherApplication.main(23)] - Launching application 
+[10-03-2018 18:45:25.066]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 12848 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:45:25.066]
+				[INFO ][o.s.boot.SpringApplication.logStarting(48)] - Starting application on GethrO-PC with PID 12848 (started by ElarbiMohamedAymen in C:\Users\ElarbiMohamedAymen\git\RentingService) 
+[10-03-2018 18:45:25.067]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:45:25.067]
+				[INFO ][o.s.boot.SpringApplication.logStartupProfileInfo(593)] - No active profile set, falling back to default profiles: default 
+[10-03-2018 18:45:25.125]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:45:25 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:25.125]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:45:25 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:25.291]
+				[DEBUG][org.jboss.logging.logProvider(160)] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[10-03-2018 18:45:25.293]
+				[INFO ][o.h.validator.internal.util.Version.<clinit>(30)] - HV000001: Hibernate Validator 5.3.6.Final 
+[10-03-2018 18:45:25.323]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:45:26.073]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:45:26.083]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:45:26.088]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:45:26.089]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:45:26.091]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:45:26.093]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:45:26.095]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:45:26.096]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:45:26.097]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:45:26.097]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:45:26.407]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:45:26.407]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize(89)] - Tomcat initialized with port(s): 8080 (http) 
+[10-03-2018 18:45:26.425]
+				[INFO ][o.a.catalina.core.StandardService.log(179)] - Starting service [Tomcat] 
+[10-03-2018 18:45:26.427]
+				[INFO ][o.a.catalina.core.StandardEngine.log(179)] - Starting Servlet Engine: Apache Tomcat/8.5.23 
+[10-03-2018 18:45:26.533]
+				[INFO ][o.a.c.c.C.[Tomcat].[localhost].[/].log(179)] - Initializing Spring embedded WebApplicationContext 
+[10-03-2018 18:45:26.534]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1408 ms 
+[10-03-2018 18:45:26.534]
+				[INFO ][o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext(276)] - Root WebApplicationContext: initialization completed in 1408 ms 
+[10-03-2018 18:45:26.681]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:45:26.681]
+				[INFO ][o.s.b.w.s.ServletRegistrationBean.onStartup(190)] - Mapping servlet: 'dispatcherServlet' to [/] 
+[10-03-2018 18:45:26.685]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:45:26.685]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'characterEncodingFilter' to: [/*] 
+[10-03-2018 18:45:26.686]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:45:26.686]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+[10-03-2018 18:45:26.687]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:45:26.687]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+[10-03-2018 18:45:26.687]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:45:26.687]
+				[INFO ][o.s.b.w.s.FilterRegistrationBean.configure(258)] - Mapping filter: 'requestContextFilter' to: [/*] 
+[10-03-2018 18:45:26.849]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:45:26.856]
+				[DEBUG][o.h.v.i.e.r.DefaultTraversableResolver.detectJPA(70)] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable. 
+[10-03-2018 18:45:26.857]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.messageInterpolator(163)] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator 
+[10-03-2018 18:45:26.858]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.constraintValidatorFactory(185)] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory 
+[10-03-2018 18:45:26.858]
+				[DEBUG][o.h.v.i.engine.ConfigurationImpl.parameterNameProvider(199)] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy42 
+[10-03-2018 18:45:26.858]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(99)] - Trying to load META-INF/validation.xml for XML based Validator configuration. 
+[10-03-2018 18:45:26.859]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(47)] - Trying to load META-INF/validation.xml via user class loader 
+[10-03-2018 18:45:26.859]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(54)] - Trying to load META-INF/validation.xml via TCCL 
+[10-03-2018 18:45:26.859]
+				[DEBUG][o.h.v.i.xml.ResourceLoaderHelper.getResettableInputStreamForPath(60)] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader 
+[10-03-2018 18:45:26.859]
+				[DEBUG][o.h.v.i.xml.ValidationXmlParser.getValidationXmlInputStream(106)] - No META-INF/validation.xml found. Using annotation based configuration only. 
+[10-03-2018 18:45:27.038]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:45:25 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:27.038]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(534)] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:45:25 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:27.106]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:45:27.106]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+[10-03-2018 18:45:27.107]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:45:27.107]
+				[INFO ][o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(543)] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+[10-03-2018 18:45:27.140]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:45:27.140]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:45:27.141]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:45:27.141]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:45:27.182]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:45:27.182]
+				[INFO ][o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler(362)] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+[10-03-2018 18:45:27.347]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:45:27.347]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated(431)] - Registering beans for JMX exposure on startup 
+[10-03-2018 18:45:27.366]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Initializing ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:45:27.379]
+				[INFO ][o.a.coyote.http11.Http11NioProtocol.log(179)] - Starting ProtocolHandler ["http-nio-8080"] 
+[10-03-2018 18:45:27.390]
+				[INFO ][o.a.tomcat.util.net.NioSelectorPool.log(179)] - Using a shared selector for servlet write/read 
+[10-03-2018 18:45:27.407]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:45:27.407]
+				[INFO ][o.s.b.c.e.t.TomcatEmbeddedServletContainer.start(201)] - Tomcat started on port(s): 8080 (http) 
+[10-03-2018 18:45:27.413]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.595 seconds (JVM running for 3.653) 
+[10-03-2018 18:45:27.413]
+				[INFO ][o.s.boot.SpringApplication.logStarted(57)] - Started application in 2.595 seconds (JVM running for 3.653) 
+[10-03-2018 18:45:35.440]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:45:35.440]
+				[INFO ][c.geenie.renting.LauncherApplication.stop(51)] - Closing application 
+[10-03-2018 18:45:35.441]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:45:25 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:35.441]
+				[INFO ][o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose(984)] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2af69758: startup date [Sat Mar 10 18:45:25 GMT+01:00 2018]; root of context hierarchy 
+[10-03-2018 18:45:35.443]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
+[10-03-2018 18:45:35.443]
+				[INFO ][o.s.j.e.a.AnnotationMBeanExporter.destroy(449)] - Unregistering JMX-exposed beans on shutdown 
