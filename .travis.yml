@@ -1,10 +1,10 @@
-before_install:
-  - chmod +x mvnw
-  
+
 language: java
-sudo: enabled
 jdk:
 - oraclejdk8
+# would just use default install/script but the ./mvnw script errors on travis
+# obviously this only works for maven builds right now...
 install:
-- mvn -N io.takari:maven:wrapper
-- ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script:
+- mvn test
