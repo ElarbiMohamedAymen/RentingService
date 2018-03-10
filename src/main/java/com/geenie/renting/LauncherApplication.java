@@ -1,25 +1,26 @@
 package com.geenie.renting;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @SpringBootApplication
 public class LauncherApplication extends Application {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(LauncherApplication.class);
 	protected ConfigurableApplicationContext springContext;
 
 	public static void main(String[] args) {
+		LOGGER.info("Launching application");
 		Application.launch(args);
 	}
 
@@ -47,6 +48,7 @@ public class LauncherApplication extends Application {
 
 	@Override
 	public void stop() throws Exception {
+		LOGGER.info("Closing application");
 		springContext.close();
 	}
 }
