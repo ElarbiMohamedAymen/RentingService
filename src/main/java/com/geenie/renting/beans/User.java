@@ -8,17 +8,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotNull;;
 
 @Entity
 @Table(uniqueConstraints = { @UniqueConstraint(columnNames = { "username", "mail" }) })
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class User implements Serializable {
 
 	@Id
@@ -32,6 +29,7 @@ public class User implements Serializable {
 	@NotNull
 	@Column(unique = true)
 	private String username;
+	@NotNull
 	private String password;
 	private int age;
 	private int telephoneNumber;

@@ -3,18 +3,22 @@ package com.geenie.renting.beans;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 @Entity
-@DiscriminatorValue("APPARTMENT")
-public class Appartment  extends User implements Serializable{
+public class Appartment  implements Serializable{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long idAppartment;
 	private String type;
 	private int rooms;
 	private boolean occupied;
@@ -26,7 +30,6 @@ public class Appartment  extends User implements Serializable{
 	private List<User> previousOwners;
 	
 	public Appartment(String type, int rooms, boolean occupied, User owner) {
-		super();
 		this.type = type;
 		this.rooms = rooms;
 		this.occupied = occupied;
@@ -93,9 +96,16 @@ public class Appartment  extends User implements Serializable{
 	public void setPreviousOwners(List<User> previousOwners) {
 		this.previousOwners = previousOwners;
 	}
-	
-	
-	
-	
+
+
+	public long getIdAppartment() {
+		return idAppartment;
+	}
+
+
+	public void setIdAppartment(long idAppartment) {
+		this.idAppartment = idAppartment;
+	}
+		
 	
 }

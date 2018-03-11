@@ -4,37 +4,40 @@ import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-@DiscriminatorValue("HOTEL")
-public class Hotel extends User implements Serializable {
+public class Hotel implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long idHotel;
 	private int roomNumber;
 	private String address;
+	private String hotelName;
 	private User manager;
-	@OneToMany(mappedBy="hotel",cascade=CascadeType.PERSIST,fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "hotel", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
 	private List<HotelRoom> rooms;
 
-	public Hotel(int roomNumber, String address, User manager, List<HotelRoom> rooms) {
-		super();
+	public Hotel(String hotelName, int roomNumber, String address, User manager, List<HotelRoom> rooms) {
 		this.roomNumber = roomNumber;
 		this.address = address;
 		this.manager = manager;
 		this.rooms = rooms;
+		this.hotelName = hotelName;
 	}
 
 	public Hotel() {
 	}
-	
 
 	public int getRoomNumber() {
 		return roomNumber;
@@ -67,5 +70,22 @@ public class Hotel extends User implements Serializable {
 	public void setRooms(List<HotelRoom> rooms) {
 		this.rooms = rooms;
 	}
+
+	public String getHotelName() {
+		return hotelName;
+	}
+
+	public void setHotelName(String hotelName) {
+		this.hotelName = hotelName;
+	}
+
+	public long getIdHotel() {
+		return idHotel;
+	}
+
+	public void setIdHotel(long idHotel) {
+		this.idHotel = idHotel;
+	}
+	
 
 }
