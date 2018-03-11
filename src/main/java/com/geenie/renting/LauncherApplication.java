@@ -1,14 +1,13 @@
 package com.geenie.renting;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
+
+import com.geenie.renting.config.StageManager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +17,7 @@ public class LauncherApplication extends Application {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(LauncherApplication.class);
 	protected ConfigurableApplicationContext springContext;
+	protected StageManager stageManager;
 
 	public static void main(String[] args) {
 		LOGGER.info("Launching application");
@@ -25,19 +25,27 @@ public class LauncherApplication extends Application {
 	}
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("/gui/Login.fxml"));
-
-		Scene scene = new Scene(root);
-		primaryStage.getIcons().add(new Image("/gui/IcoPaper.png"));
-		primaryStage.setScene(scene);
-		primaryStage.show();
-
+	public void init() throws Exception {
+		LOGGER.debug("entering init method");
+		springContext = springBootApplicationContext();
+		LOGGER.debug("quiting init method");
 	}
 
 	@Override
-	public void init() throws Exception {
-		springContext = springBootApplicationContext();
+	public void start(Stage stage) throws Exception {
+		LOGGER.debug("entering start method");
+		stageManager = springContext.getBean(StageManager.class, stage);
+		displayInitialScene();
+		LOGGER.debug("quiting start method");
+	}
+
+	/**
+	 * Useful to override this method by sub-classes wishing to change the first
+	 * Scene to be displayed on startup. Example: Functional tests on main
+	 * window.
+	 */
+	protected void displayInitialScene() {
+		stageManager.switchScene("/gui/Login.fxml");
 	}
 
 	private ConfigurableApplicationContext springBootApplicationContext() {
