@@ -8,14 +8,22 @@ package com.geenie.renting.fxml.controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Controller;
+
 import javafx.fxml.Initializable;
 
+import com.geenie.renting.beans.Hotel;
 import com.geenie.renting.fxml.utils.Utils;
+import com.geenie.renting.service.interfaces.IHotelMySQLService;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Tab;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -23,9 +31,10 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author ElarbiMohamedAymen
  */
+@Controller
 public class LoginController implements Initializable {
 
-	private final static String gotoLoginPane = "loginPane";
+	private static final String GOTO_LOGIN_PANE = "loginPane";
 
 	@FXML
 	private AnchorPane parentPane;
@@ -54,12 +63,42 @@ public class LoginController implements Initializable {
 	@FXML
 	private JFXButton logoutNewUserPane;
 
+	@FXML
+	private AnchorPane addHotelPane;
+
+	@FXML
+	private AnchorPane displayHotelPane;
+
+	@FXML
+	private Tab specificHotelManagment;
+	@FXML
+	private AnchorPane manageHotelPane;
+	@FXML
+	private AnchorPane manageHotelPaneParent;
+
+	@FXML
+	private JFXTextField addHotelNameTF;
+
+	@FXML
+	private JFXTextField addHotelAddressTF;
+
+	@FXML
+	private JFXTextField addHotelRoomsTF;
+
+	@FXML
+	private JFXTextField addHotelManagerTF;
+
+	
+	@Lazy
+	@Autowired
+	@Qualifier("hotelMySQLServiceImpl")
+	IHotelMySQLService hotelService;
 	/**
 	 * Initializes the controller class.
 	 */
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		Utils.switchPanes(gotoLoginPane, parentPane);
+		Utils.switchPanes(GOTO_LOGIN_PANE, parentPane);
 		// TODO
 	}
 
@@ -72,26 +111,71 @@ public class LoginController implements Initializable {
 		}
 		if (gotos.equals("aymen")) {
 			Utils.switchPanes("hotelPane", parentPane);
-		}
-		else{
+		} else {
 			Utils.switchPanes("newUserPane", parentPane);
 		}
 	}
 
 	@FXML
 	void logoutAppartment(ActionEvent event) {
-		Utils.switchPanes(gotoLoginPane, parentPane);
+		Utils.switchPanes(GOTO_LOGIN_PANE, parentPane);
 
 	}
 
 	@FXML
 	void logoutHotel(ActionEvent event) {
-		Utils.switchPanes(gotoLoginPane, parentPane);
+		Utils.switchPanes(GOTO_LOGIN_PANE, parentPane);
 	}
 
 	@FXML
 	void logoutNewUser(ActionEvent event) {
-		Utils.switchPanes(gotoLoginPane, parentPane);
+		Utils.switchPanes(GOTO_LOGIN_PANE, parentPane);
+	}
+
+	@FXML
+	void displayAddHotelGrid(ActionEvent event) {
+		Utils.switchPanes("addHotelPane", manageHotelPane);
+	}
+
+	@FXML
+	void displayHotelGrid(ActionEvent event) {
+		Utils.switchPanes("displayHotelPane", manageHotelPane);
+	}
+
+	@FXML
+	void clearAddHotel(ActionEvent event) {
+
+		addHotelNameTF.setText("");
+
+		addHotelAddressTF.setText("");
+
+		addHotelRoomsTF.setText("");
+
+		addHotelManagerTF.setText("");
+	}
+
+	@FXML
+	void performAddHotel(ActionEvent event) {
+		String hotelName = addHotelNameTF.getText();
+
+		String hotelAddress = addHotelAddressTF.getText();
+
+		String hotelManager = addHotelManagerTF.getText();
+		
+		int hotelRooms = -1;
+		
+		if(Utils.isNumber(addHotelRoomsTF.getText())){
+			hotelRooms = Integer.valueOf(addHotelRoomsTF.getText());
+		}
+		else{
+			//TODO error hotelRooms should be integer
+		}
+		Hotel hotel = new Hotel();
+		hotel.setHotelName(hotelName);
+		hotel.setAddress(hotelAddress);
+		hotel.setRoomNumber(hotelRooms);
+		hotelService.addHotel(hotel);
+
 	}
 
 }
