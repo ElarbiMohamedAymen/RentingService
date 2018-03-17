@@ -36,8 +36,11 @@ import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 
 /**
@@ -117,8 +120,8 @@ public class LoginController implements Initializable {
 
 	@FXML
 	private TableColumn<Hotel, String> hotelRoomsCl;
-	@FXML
-	HBox hbox;
+    @FXML
+    private FlowPane hbox;
 
 	@Lazy
 	@Autowired
@@ -245,7 +248,7 @@ public class LoginController implements Initializable {
 	}
 
 	private void openProdDetails(Hotel hotel) {
-		//TODO to complete
+		// TODO to complete - ADD SCROLLING
 		specificHotelManagment.setDisable(false);
 		hotelManagmentTab.getSelectionModel().select(specificHotelManagment);
 		specificHotelManagment.setText(hotel.getHotelName());
@@ -253,13 +256,18 @@ public class LoginController implements Initializable {
 		for (int i = 0; i < hotel.getRoomNumber(); i++) {
 			// for (Category L : listCategories) {
 			JFXButton bn = new JFXButton();
+			if ((i + 1) % 2 == 0) {
+				Image imageDecline = new Image(getClass().getResourceAsStream("/buttons/occupied.png"));
+				bn.setGraphic(new ImageView(imageDecline));
+			} else {
+				Image imageDecline = new Image(getClass().getResourceAsStream("/buttons/available.png"));
+				bn.setGraphic(new ImageView(imageDecline));
+			}
 			bn.setText(String.valueOf(i + 1));
 			bn.setStyle("-fx-font-size: 20px");
-
+			bn.setPrefSize(150, 50);
 			hbox.getChildren().add(bn);
-			hbox.setSpacing(20);
-			hbox.setLayoutY(20);
-			hbox.setLayoutX(10);
+			
 
 			bn.setOnAction(new EventHandler<ActionEvent>() {
 
