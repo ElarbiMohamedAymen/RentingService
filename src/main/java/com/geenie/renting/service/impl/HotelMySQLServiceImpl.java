@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.geenie.renting.beans.Hotel;
+import com.geenie.renting.beans.HotelRoom;
 import com.geenie.renting.repository.HotelRepository;
 import com.geenie.renting.service.interfaces.IHotelMySQLService;
 
@@ -23,6 +24,18 @@ public class HotelMySQLServiceImpl implements IHotelMySQLService {
 	@Override
 	public List<Hotel> findAllHotels() {
 		return (List<Hotel>) hotelRepository.findAll();
+	}
+
+	@Override
+	public int countAvailableRooms(Hotel hotel) {
+		List<HotelRoom>rooms = hotel.getRooms();
+		int availableRooms = 0;
+		for (HotelRoom hotelRoom : rooms) {
+			if(!hotelRoom.isOccupied()){
+				availableRooms++;
+			}
+		}
+		return availableRooms;
 	}
 
 }

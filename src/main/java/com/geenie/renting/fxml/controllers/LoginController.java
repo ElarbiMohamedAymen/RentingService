@@ -179,6 +179,7 @@ public class LoginController implements Initializable {
 			return new ReadOnlyStringWrapper(manager);
 		});
 		hotelRoomsCl.setCellValueFactory(new PropertyValueFactory<>("roomNumber"));
+		//TODO change roomNumbers to available rooms, using countAvailableRooms()
 		displayAllHotelsTV.setItems(hotelsData);
 	}
 
