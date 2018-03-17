@@ -6,6 +6,7 @@
 package com.geenie.renting.fxml.controllers;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,15 @@ import com.geenie.renting.service.interfaces.IHotelMySQLService;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 
+import javafx.beans.property.ReadOnlyStringWrapper;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -87,12 +94,26 @@ public class LoginController implements Initializable {
 
 	@FXML
 	private JFXTextField addHotelManagerTF;
+	@FXML
+	private TableView<Hotel> displayAllHotelsTV;
 
-	
+	@FXML
+	private TableColumn<Hotel, String> hotelnameCl;
+
+	@FXML
+	private TableColumn<Hotel, String> hoteladdresscl;
+
+	@FXML
+	private TableColumn<Hotel, String> hotelManagerCl;
+
+	@FXML
+	private TableColumn<Hotel, String> hotelRoomsCl;
+
 	@Lazy
 	@Autowired
 	@Qualifier("hotelMySQLServiceImpl")
 	IHotelMySQLService hotelService;
+
 	/**
 	 * Initializes the controller class.
 	 */
@@ -140,6 +161,25 @@ public class LoginController implements Initializable {
 	@FXML
 	void displayHotelGrid(ActionEvent event) {
 		Utils.switchPanes("displayHotelPane", manageHotelPane);
+		ObservableList<Hotel> hotelsData = FXCollections.observableArrayList();
+		List<Hotel> hotels = hotelService.findAllHotels();
+		for (Hotel hotel : hotels) {
+			hotelsData.add(hotel);
+		}
+		hotelnameCl.setCellValueFactory(new PropertyValueFactory<>("hotelName"));
+		hoteladdresscl.setCellValueFactory(new PropertyValueFactory<>("address"));
+		hotelManagerCl.setCellValueFactory(hotel -> {
+			String manager = "";
+			if (hotel.getValue().getManager() != null) {
+				manager = hotel.getValue().getManager().getLastName() + " "
+						+ hotel.getValue().getManager().getFirstName();
+			} else {
+				manager = "PasEncoreDéfini";
+			}
+			return new ReadOnlyStringWrapper(manager);
+		});
+		hotelRoomsCl.setCellValueFactory(new PropertyValueFactory<>("roomNumber"));
+		displayAllHotelsTV.setItems(hotelsData);
 	}
 
 	@FXML
@@ -161,14 +201,13 @@ public class LoginController implements Initializable {
 		String hotelAddress = addHotelAddressTF.getText();
 
 		String hotelManager = addHotelManagerTF.getText();
-		
+
 		int hotelRooms = -1;
-		
-		if(Utils.isNumber(addHotelRoomsTF.getText())){
+
+		if (Utils.isNumber(addHotelRoomsTF.getText())) {
 			hotelRooms = Integer.valueOf(addHotelRoomsTF.getText());
-		}
-		else{
-			//TODO error hotelRooms should be integer
+		} else {
+			// TODO error hotelRooms should be integer
 		}
 		Hotel hotel = new Hotel();
 		hotel.setHotelName(hotelName);
