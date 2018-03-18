@@ -5,8 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.geenie.renting.beans.Hotel;
 
-
 @Repository
 public interface HotelRepository extends CrudRepository<Hotel, Long> {
-	// TODO
+
 }
