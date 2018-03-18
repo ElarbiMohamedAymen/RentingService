@@ -19,6 +19,7 @@ import org.springframework.stereotype.Controller;
 import javafx.fxml.Initializable;
 
 import com.geenie.renting.beans.Hotel;
+import com.geenie.renting.beans.HotelRoom;
 import com.geenie.renting.fxml.utils.Utils;
 import com.geenie.renting.service.interfaces.IHotelMySQLService;
 import com.jfoenix.controls.JFXButton;
@@ -30,11 +31,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Tooltip;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -120,8 +121,8 @@ public class LoginController implements Initializable {
 
 	@FXML
 	private TableColumn<Hotel, String> hotelRoomsCl;
-    @FXML
-    private FlowPane hbox;
+	@FXML
+	private FlowPane hbox;
 
 	@Lazy
 	@Autowired
@@ -192,9 +193,10 @@ public class LoginController implements Initializable {
 			}
 			return new ReadOnlyStringWrapper(manager);
 		});
-		hotelRoomsCl.setCellValueFactory(new PropertyValueFactory<>("roomNumber"));
-		// TODO change roomNumbers to available rooms, using
-		// countAvailableRooms()
+		
+		hotelRoomsCl.setCellValueFactory(hotel -> {
+			return new ReadOnlyStringWrapper(String.valueOf(hotelService.countAvailableRooms(hotel.getValue())));
+		});
 		displayAllHotelsTV.setItems(hotelsData);
 	}
 
@@ -252,32 +254,40 @@ public class LoginController implements Initializable {
 		specificHotelManagment.setDisable(false);
 		hotelManagmentTab.getSelectionModel().select(specificHotelManagment);
 		specificHotelManagment.setText(hotel.getHotelName());
-
-		for (int i = 0; i < hotel.getRoomNumber(); i++) {
-			// for (Category L : listCategories) {
+		int i = 1;
+		for (HotelRoom hotelRoom : hotel.getRooms()) {
 			JFXButton bn = new JFXButton();
-			if ((i + 1) % 2 == 0) {
+			Tooltip tooltip = new Tooltip();
+			if (hotelRoom.isOccupied()) {
 				Image imageDecline = new Image(getClass().getResourceAsStream("/buttons/occupied.png"));
 				bn.setGraphic(new ImageView(imageDecline));
+				tooltip.setText("Room "+i+"\n" + "is occupied \n");
 			} else {
 				Image imageDecline = new Image(getClass().getResourceAsStream("/buttons/available.png"));
 				bn.setGraphic(new ImageView(imageDecline));
+				tooltip.setText("Room "+i+"\n" + "is available and could be rent \n");
 			}
-			bn.setText(String.valueOf(i + 1));
+			bn.setTooltip(tooltip);
+			bn.setText(String.valueOf(i));
 			bn.setStyle("-fx-font-size: 20px");
 			bn.setPrefSize(150, 50);
 			hbox.getChildren().add(bn);
-			
 
 			bn.setOnAction(new EventHandler<ActionEvent>() {
 
 				@Override
 				public void handle(ActionEvent event) {
+					showMoreDetailsForHotelRoom(hotelRoom);
 					System.out.println(bn.getText());
 
 				}
 			});
-
+			i++;
 		}
+	}
+
+	private void showMoreDetailsForHotelRoom(HotelRoom hotelRoom) {
+		// TODO Auto-generated method stub
+
 	}
 }
