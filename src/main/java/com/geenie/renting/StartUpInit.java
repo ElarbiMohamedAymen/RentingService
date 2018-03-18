@@ -84,19 +84,42 @@ public class StartUpInit implements ApplicationRunner {
 		room4.setHotel(hotel);
 		room4.setOccupied(false);
 		
+		HotelRoom room5 = new HotelRoom();
+		room5.setBeds(1);
+		room5.setHotel(hotel);
+		room5.setOccupied(false);
+		
+		HotelRoom room6 = new HotelRoom();
+		room6.setBeds(2);
+		room6.setHotel(hotel);
+		room6.setOccupied(true);
+		
+		HotelRoom room7 = new HotelRoom();
+		room7.setBeds(1);
+		room7.setHotel(hotel);
+		room7.setOccupied(true);
+		
+		HotelRoom room8 = new HotelRoom();
+		room8.setBeds(3);
+		room8.setHotel(hotel);
+		room8.setOccupied(true);
+		
 		List<HotelRoom> rooms = new ArrayList<>();
 		rooms.add(room1);
 		rooms.add(room2);
 		rooms.add(room3);
 		rooms.add(room4);
+		rooms.add(room5);
+		rooms.add(room6);
+		rooms.add(room7);
+		rooms.add(room8);
 		
 		hotel.setRooms(rooms);
 		hotel.setRoomNumber(rooms.size());
 		
-		hotelRoomService.addHotelRoom(room1);
-		hotelRoomService.addHotelRoom(room2);
-		hotelRoomService.addHotelRoom(room3);
-		hotelRoomService.addHotelRoom(room4);
+		for (HotelRoom hotelRoom : rooms) {
+			hotelRoomService.addHotelRoom(hotelRoom);
+		}
 		
 		hotelService.addHotel(hotel);
 		
