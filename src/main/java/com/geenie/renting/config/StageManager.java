@@ -28,6 +28,28 @@ public class StageManager {
 		Parent viewRootNodeHierarchy = loadViewNodeHierarchy(view);
 		show(viewRootNodeHierarchy);
 	}
+	
+	public void popupScene(final String view) {
+		Parent viewRootNodeHierarchy = loadViewNodeHierarchy(view);
+		showPopup(viewRootNodeHierarchy);
+	}
+	
+	private void showPopup(final Parent rootnode){
+		//Scene scene = prepareScene(rootnode);
+        Scene scene = new Scene(rootnode);
+        Stage Sc = new Stage();
+		Sc.setTitle("Renting Service");
+        Sc.setScene(scene);
+		Sc.sizeToScene();
+		Sc.centerOnScreen();
+
+		try {
+			Sc.showAndWait();
+		} catch (Exception exception) {
+			logAndExit("", exception);
+		}
+
+	}
 
 	private void show(final Parent rootnode) {
 		Scene scene = prepareScene(rootnode);
