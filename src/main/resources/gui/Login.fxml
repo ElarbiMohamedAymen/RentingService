@@ -35,8 +35,8 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField fx:id="usernameLoginTF" GridPane.columnIndex="1" />
-                  <JFXTextField fx:id="passwordLoginTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="usernameLoginTF" onAction="#unlockAccess" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="passwordLoginTF" onAction="#unlockAccess" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="Password" GridPane.rowIndex="1" />
                   <Label text="Username" />
                </children>
@@ -48,7 +48,7 @@
          <children>
             <TabPane fx:id="hotelManagmentTab" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <tabs>
-                <Tab text="Manage Hotels">
+                <Tab fx:id="mainHotelManagment" text="Manage Hotels">
                   <content>
                     <AnchorPane fx:id="manageHotelPaneParent" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
