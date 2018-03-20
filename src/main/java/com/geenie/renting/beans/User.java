@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotNull;;
@@ -37,6 +38,8 @@ public class User implements Serializable {
 	private boolean isBlocked;
 	@Lob
 	private byte[] picture;
+	@OneToOne(mappedBy="manager")
+	private Hotel hotelManaged;
 	@ManyToMany
 	private List<Stay> stays;
 	@ManyToMany()
