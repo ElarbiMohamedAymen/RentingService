@@ -20,12 +20,15 @@ import javafx.fxml.Initializable;
 
 import com.geenie.renting.beans.Hotel;
 import com.geenie.renting.beans.HotelRoom;
+import com.geenie.renting.config.StageManager;
 import com.geenie.renting.fxml.utils.Utils;
 import com.geenie.renting.service.interfaces.IHotelMySQLService;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 
 import javafx.beans.property.ReadOnlyStringWrapper;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -39,6 +42,8 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -92,6 +97,8 @@ public class LoginController implements Initializable {
 	@FXML
 	private Tab specificHotelManagment;
 	@FXML
+	private Tab mainHotelManagment;
+	@FXML
 	private AnchorPane manageHotelPane;
 	@FXML
 	private AnchorPane manageHotelPaneParent;
@@ -129,11 +136,24 @@ public class LoginController implements Initializable {
 	@Qualifier("hotelMySQLServiceImpl")
 	IHotelMySQLService hotelService;
 
+	@Lazy
+	@Autowired
+	private StageManager stageManager;
+
 	/**
 	 * Initializes the controller class.
 	 */
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
+		hotelManagmentTab.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Tab>() {
+			@Override
+			public void changed(ObservableValue<? extends Tab> ov, Tab t, Tab t1) {
+				if ("mainHotelManagment".equals(t1.getId())) {
+					 specificHotelManagment.setDisable(true);
+					 specificHotelManagment.setText("");
+				}
+			}
+		});
 		Utils.switchPanes(GOTO_LOGIN_PANE, parentPane);
 		// TODO
 	}
@@ -193,7 +213,7 @@ public class LoginController implements Initializable {
 			}
 			return new ReadOnlyStringWrapper(manager);
 		});
-		
+
 		hotelRoomsCl.setCellValueFactory(hotel -> {
 			return new ReadOnlyStringWrapper(String.valueOf(hotelService.countAvailableRooms(hotel.getValue())));
 		});
@@ -254,6 +274,7 @@ public class LoginController implements Initializable {
 		specificHotelManagment.setDisable(false);
 		hotelManagmentTab.getSelectionModel().select(specificHotelManagment);
 		specificHotelManagment.setText(hotel.getHotelName());
+		hbox.getChildren().clear();
 		int i = 1;
 		for (HotelRoom hotelRoom : hotel.getRooms()) {
 			JFXButton bn = new JFXButton();
@@ -261,11 +282,11 @@ public class LoginController implements Initializable {
 			if (hotelRoom.isOccupied()) {
 				Image imageDecline = new Image(getClass().getResourceAsStream("/buttons/occupied.png"));
 				bn.setGraphic(new ImageView(imageDecline));
-				tooltip.setText("Room "+i+"\n" + "is occupied \n");
+				tooltip.setText("Room " + i + "\n" + "is occupied \n");
 			} else {
 				Image imageDecline = new Image(getClass().getResourceAsStream("/buttons/available.png"));
 				bn.setGraphic(new ImageView(imageDecline));
-				tooltip.setText("Room "+i+"\n" + "is available and could be rent \n");
+				tooltip.setText("Room " + i + "\n" + "is available and could be rent \n");
 			}
 			bn.setTooltip(tooltip);
 			bn.setText(String.valueOf(i));
@@ -278,8 +299,6 @@ public class LoginController implements Initializable {
 				@Override
 				public void handle(ActionEvent event) {
 					showMoreDetailsForHotelRoom(hotelRoom);
-					System.out.println(bn.getText());
-
 				}
 			});
 			i++;
@@ -287,7 +306,8 @@ public class LoginController implements Initializable {
 	}
 
 	private void showMoreDetailsForHotelRoom(HotelRoom hotelRoom) {
-		// TODO Auto-generated method stub
+		HRoomController.hotelRoom = hotelRoom;
+		stageManager.popupScene("/gui/HotelRoom.fxml");
 
 	}
 }
