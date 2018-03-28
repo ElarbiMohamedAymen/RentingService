@@ -2,10 +2,14 @@ package com.geenie.renting.fxml.utils;
 
 import java.util.Iterator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javafx.scene.Node;
 import javafx.scene.layout.AnchorPane;
 
 public class Utils {
+	private static final Logger LOGGER = LoggerFactory.getLogger(Utils.class);
 
 	private Utils() {
 		// empty constructor
@@ -23,8 +27,15 @@ public class Utils {
 			}
 		}
 	}
-	
-	public static boolean isNumber(String input){
+
+	public static boolean isNumber(String input) {
+		try {
+			double d = Double.parseDouble(input);
+		} catch (NumberFormatException nfe) {
+			LOGGER.error("entred values {} is not numeric", input, nfe);
+			return false;
+		}
+		LOGGER.info("entred values {} is numeric", input);
 		return true;
 	}
 }
