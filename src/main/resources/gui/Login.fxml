@@ -52,7 +52,7 @@
                   <content>
                     <AnchorPane fx:id="manageHotelPaneParent" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Accordion prefHeight="371.0" prefWidth="202.0">
+                              <Accordion fx:id="manageHotelAccordion" prefHeight="371.0" prefWidth="202.0">
                                 <panes>
                                   <TitledPane animated="false" text="Add Hotel">
                                     <content>
@@ -63,7 +63,7 @@
                                           </AnchorPane>
                                     </content>
                                   </TitledPane>
-                                  <TitledPane animated="false" text="Display All Hotels">
+                                  <TitledPane fx:id="displayAllHotelTitledPane" animated="false" text="Display All Hotels">
                                     <content>
                                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                              <children>
