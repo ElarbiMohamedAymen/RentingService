@@ -7,6 +7,7 @@ package com.geenie.renting.fxml.controllers;
 
 import java.net.URL;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import org.slf4j.Logger;
@@ -34,20 +35,22 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Accordion;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TitledPane;
 import javafx.scene.control.Tooltip;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.HBox;
 
 /**
  * FXML Controller class
@@ -130,6 +133,10 @@ public class LoginController implements Initializable {
 	private TableColumn<Hotel, String> hotelRoomsCl;
 	@FXML
 	private FlowPane hbox;
+	@FXML
+	private Accordion manageHotelAccordion;
+	@FXML
+	private TitledPane displayAllHotelTitledPane;
 
 	@Lazy
 	@Autowired
@@ -149,8 +156,8 @@ public class LoginController implements Initializable {
 			@Override
 			public void changed(ObservableValue<? extends Tab> ov, Tab t, Tab t1) {
 				if ("mainHotelManagment".equals(t1.getId())) {
-					 specificHotelManagment.setDisable(true);
-					 specificHotelManagment.setText("");
+					specificHotelManagment.setDisable(true);
+					specificHotelManagment.setText("");
 				}
 			}
 		});
@@ -244,14 +251,37 @@ public class LoginController implements Initializable {
 
 		if (Utils.isNumber(addHotelRoomsTF.getText())) {
 			hotelRooms = Integer.valueOf(addHotelRoomsTF.getText());
+			LOGGER.info("Adding hotel with {} rooms, value entred: {} ", hotelRooms, addHotelRoomsTF.getText());
 		} else {
-			// TODO error hotelRooms should be integer
+			Alert alert = new Alert(Alert.AlertType.ERROR);
+			alert.setTitle("RentingService");
+			alert.setHeaderText(null);
+			alert.setContentText("Please give a valid number");
+			alert.showAndWait();
+			return;
 		}
 		Hotel hotel = new Hotel();
 		hotel.setHotelName(hotelName);
 		hotel.setAddress(hotelAddress);
 		hotel.setRoomNumber(hotelRooms);
 		hotelService.addHotel(hotel);
+		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+		alert.setTitle("RentingService");
+		alert.setHeaderText(null);
+		alert.setContentText("Hotel Added!!, do you want to define Hotel Room now ?");
+		ButtonType continuer = new ButtonType("OK", ButtonBar.ButtonData.NEXT_FORWARD);
+		ButtonType later = new ButtonType("LATER", ButtonBar.ButtonData.CANCEL_CLOSE);
+		alert.getButtonTypes().setAll(continuer, later);
+		Optional<ButtonType> result = alert.showAndWait();
+		LOGGER.info("User choose {}", result.get().getText());
+		if (continuer.getText().equals(result.get().getText())) {
+			// ... user chose OK
+		} else {
+			manageHotelAccordion.setExpandedPane(displayAllHotelTitledPane);
+			clearAddHotel(event);
+			displayHotelGrid(event);
+		}
+		return;
 
 	}
 
