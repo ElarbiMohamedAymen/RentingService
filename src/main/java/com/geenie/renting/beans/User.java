@@ -170,8 +170,7 @@ public class User implements Serializable {
 	public String toString() {
 		return "User [idUser=" + idUser + ", firstName=" + firstName + ", lastName=" + lastName + ", mail=" + mail
 				+ ", username=" + username + ", password=" + password + ", age=" + age + ", telephoneNumber="
-				+ telephoneNumber + ", isActive=" + isActive + ", isBlocked=" + isBlocked + ", picture="
-				+ Arrays.toString(picture) + ", hotelManaged=" + hotelManaged + ", stays=" + stays.size()
+				+ telephoneNumber + ", isActive=" + isActive + ", isBlocked=" + isBlocked  + ", hotelManaged=" + hotelManaged + ", stays=" + stays.size()
 				+ ", appartmentsOwned=" + appartmentsOwned.size() + ", appartmentsStayed=" + appartmentsStayed.size() + "]";
 	}
 	
