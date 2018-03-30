@@ -87,6 +87,14 @@ public class Hotel implements Serializable {
 	public void setIdHotel(long idHotel) {
 		this.idHotel = idHotel;
 	}
+
+	@Override
+	public String toString() {
+		return "Hotel [idHotel=" + idHotel + ", roomNumber=" + roomNumber + ", address=" + address + ", hotelName="
+				+ hotelName + ", manager=" + manager + ", rooms=" + rooms + "]";
+	}
+	
+	
 	
 
 }

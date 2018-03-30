@@ -106,6 +106,14 @@ public class Appartment  implements Serializable{
 	public void setIdAppartment(long idAppartment) {
 		this.idAppartment = idAppartment;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Appartment [idAppartment=" + idAppartment + ", type=" + type + ", rooms=" + rooms + ", occupied="
+				+ occupied + ", occupant=" + occupant + ", owner=" + owner +"]";
+	}
 		
+	
 	
 }

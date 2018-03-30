@@ -98,4 +98,11 @@ public class Stay implements Serializable {
 		this.to = to;
 	}
 
+	@Override
+	public String toString() {
+		return "Stay [idStay=" + idStay + ", users=" + users.size() + ", hotel=" + hotel + ", room=" + room + ", appartment="
+				+ appartment + ", from=" + from + ", to=" + to + "]";
+	}
+
+	
 }
