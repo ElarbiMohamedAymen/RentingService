@@ -26,9 +26,9 @@ public class Hotel implements Serializable {
 	private int roomNumber;
 	private String address;
 	private String hotelName;
-	@OneToOne(cascade={CascadeType.PERSIST,CascadeType.MERGE})
+	@OneToOne()
 	private User manager;
-	@OneToMany(mappedBy = "hotel", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "hotel", fetch = FetchType.EAGER)
 	private List<HotelRoom> rooms;
 
 	public Hotel(String hotelName, int roomNumber, String address, User manager, List<HotelRoom> rooms) {
