@@ -22,9 +22,12 @@ import javafx.fxml.Initializable;
 import com.geenie.renting.beans.Hotel;
 import com.geenie.renting.beans.HotelRoom;
 import com.geenie.renting.config.StageManager;
+import com.geenie.renting.exceptions.NoUserFoundException;
 import com.geenie.renting.fxml.utils.Utils;
 import com.geenie.renting.service.interfaces.IHotelMySQLService;
+import com.geenie.renting.service.interfaces.IUserMYSQLService;
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 
 import javafx.beans.property.ReadOnlyStringWrapper;
@@ -116,7 +119,7 @@ public class LoginController implements Initializable {
 	private JFXTextField addHotelRoomsTF;
 
 	@FXML
-	private JFXTextField addHotelManagerTF;
+	private JFXComboBox<String> addHotelManagerCombo;
 	@FXML
 	private TableView<Hotel> displayAllHotelsTV;
 
@@ -142,6 +145,11 @@ public class LoginController implements Initializable {
 	@Autowired
 	@Qualifier("hotelMySQLServiceImpl")
 	IHotelMySQLService hotelService;
+
+	@Lazy
+	@Autowired
+	@Qualifier("userMySQLServiceImpl")
+	IUserMYSQLService userService;
 
 	@Lazy
 	@Autowired
@@ -197,6 +205,10 @@ public class LoginController implements Initializable {
 
 	@FXML
 	void displayAddHotelGrid(ActionEvent event) {
+		addHotelManagerCombo.getItems().clear();
+		addHotelManagerCombo.getItems().addAll(userService.getUsersFullName());
+		addHotelManagerCombo.setEditable(true);
+		addHotelManagerCombo.setPromptText("choose Manager..");
 		Utils.switchPanes("addHotelPane", manageHotelPane);
 	}
 
@@ -236,7 +248,7 @@ public class LoginController implements Initializable {
 
 		addHotelRoomsTF.setText("");
 
-		addHotelManagerTF.setText("");
+		addHotelManagerCombo.setPromptText("choose Manager..");
 	}
 
 	@FXML
@@ -244,8 +256,8 @@ public class LoginController implements Initializable {
 		String hotelName = addHotelNameTF.getText();
 
 		String hotelAddress = addHotelAddressTF.getText();
-
-		String hotelManager = addHotelManagerTF.getText();
+		
+		String managerFullName = addHotelManagerCombo.getSelectionModel().getSelectedItem();
 
 		int hotelRooms = -1;
 
@@ -264,6 +276,13 @@ public class LoginController implements Initializable {
 		hotel.setHotelName(hotelName);
 		hotel.setAddress(hotelAddress);
 		hotel.setRoomNumber(hotelRooms);
+		try {
+			LOGGER.info("setting hotelManager with fullName {}",managerFullName);
+			hotel.setManager(userService.getUserByFullName(managerFullName));
+		} catch (NoUserFoundException e) {
+			LOGGER.error("Could not found user with fullName {}",managerFullName,e);
+			hotel.setManager(null);
+		}
 		hotelService.addHotel(hotel);
 		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 		alert.setTitle("RentingService");

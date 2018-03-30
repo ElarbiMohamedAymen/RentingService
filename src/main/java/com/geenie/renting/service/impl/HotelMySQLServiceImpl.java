@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.geenie.renting.beans.Hotel;
 import com.geenie.renting.beans.HotelRoom;
@@ -17,6 +18,7 @@ public class HotelMySQLServiceImpl implements IHotelMySQLService {
 	private HotelRepository hotelRepository;
 
 	@Override
+	@Transactional
 	public void addHotel(Hotel hotel) {
 		hotelRepository.save(hotel);	
 	}
