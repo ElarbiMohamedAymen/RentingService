@@ -347,14 +347,15 @@ public class LoginController implements Initializable {
 
 				@Override
 				public void handle(ActionEvent event) {
-					showMoreDetailsForHotelRoom(hotelRoom);
+					showMoreDetailsForHotelRoom(hotel,hotelRoom);
 				}
 			});
 			i++;
 		}
 	}
 
-	private void showMoreDetailsForHotelRoom(HotelRoom hotelRoom) {
+	private void showMoreDetailsForHotelRoom(Hotel hotel,HotelRoom hotelRoom) {
+		HRoomController.selectedRoom = hotel.getRooms().indexOf(hotelRoom);
 		HRoomController.hotelRoom = hotelRoom;
 		stageManager.popupScene("/gui/HotelRoom.fxml");
 
