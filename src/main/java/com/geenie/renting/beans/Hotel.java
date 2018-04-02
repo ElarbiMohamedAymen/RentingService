@@ -91,7 +91,7 @@ public class Hotel implements Serializable {
 	@Override
 	public String toString() {
 		return "Hotel [idHotel=" + idHotel + ", roomNumber=" + roomNumber + ", address=" + address + ", hotelName="
-				+ hotelName + ", manager=" + manager + ", rooms=" + rooms + "]";
+				+ hotelName + ", manager=" + manager + ", rooms=" + rooms.size() + "]";
 	}
 	
 	

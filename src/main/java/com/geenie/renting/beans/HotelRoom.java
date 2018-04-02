@@ -78,7 +78,7 @@ public class HotelRoom implements Serializable {
 	@Override
 	public String toString() {
 		return "HotelRoom [idHotelRoom=" + idHotelRoom + ", type=" + type + ", beds=" + beds + ", occupied=" + occupied
-				+ ", hotel=" + hotel + "]";
+				+ ", hotel=" + hotel.getHotelName() + "]";
 	}
 	
 	

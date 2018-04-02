@@ -1,7 +1,6 @@
 package com.geenie.renting.beans;
 
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -170,7 +169,7 @@ public class User implements Serializable {
 	public String toString() {
 		return "User [idUser=" + idUser + ", firstName=" + firstName + ", lastName=" + lastName + ", mail=" + mail
 				+ ", username=" + username + ", password=" + password + ", age=" + age + ", telephoneNumber="
-				+ telephoneNumber + ", isActive=" + isActive + ", isBlocked=" + isBlocked  + ", hotelManaged=" + hotelManaged + ", stays=" + stays.size()
+				+ telephoneNumber + ", isActive=" + isActive + ", isBlocked=" + isBlocked  + ", hotelManaged=" + hotelManaged.getHotelName() + ", stays=" + stays.size()
 				+ ", appartmentsOwned=" + appartmentsOwned.size() + ", appartmentsStayed=" + appartmentsStayed.size() + "]";
 	}
 	
